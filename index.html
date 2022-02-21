@@ -9,14 +9,30 @@
   <title>Spotify Music | Player </title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="flex justify-center items-center h-screen">
-  <div class="container w-96 h-auto p-5 shadow-lg rounded">
-    <div class="img">
-      <img src="./images/music-1.jpg" alt="" class="w-full h-full"  id="img">
+<body class="flex justify-around  items-center h-screen">
+  <div class="container w-96 h-auto px-5 py-10 shadow-2xl rounded ">
+   <div class="flex justify-between text-3xl">
+    <div>
+      <h1 class="Song-title text-lg mb-2" id="song-name">
+        Harley Bird - Home
+      </h1>
+      <h4 class="Author text-base" id="author">
+        Jordan Schor
+      </h4>
     </div>
+    <i class="bi bi-heart-fill" id="love"></i>
+   </div>
     <div id="progress-container">
       <div class="progress-bar mt-3 rounded" id="progress-Bar">
       </div>
+    </div>
+    <div class="flex mb-10 justify-between">
+      <span id="start">
+       0:00
+      </span>
+      <span id="duration">
+        
+      </span >
     </div>
     <audio src="./songs/music-1.mp3" id="audio"></audio>
      <!-- ----music Control---- -->
