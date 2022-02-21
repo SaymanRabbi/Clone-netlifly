@@ -134,6 +134,7 @@ function nextSong() {
     if (incress==allMusic.length) {
         incress = 0;
     }
+    document.getElementById('opacity').style.opacity = 1;
     songName.innerText = allMusic[incress].name;
     authorName.innerText = allMusic[incress].author;
     audio.src = (`./songs/${allMusic[incress].song}`);
@@ -147,6 +148,7 @@ function previous() {
     if (incress<allMusic.length) {
         incress--;
     }
+    document.getElementById('opacity').style.opacity = 1;
     songName.innerText = allMusic[incress].name;
     authorName.innerText = allMusic[incress].author;
     audio.src = (`./songs/${allMusic[incress].song}`);
