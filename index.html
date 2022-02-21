@@ -16,12 +16,15 @@
       <h1 class="Song-title text-lg mb-2" id="song-name">
         Harley Bird - Home
       </h1>
-      <h4 class="Author text-base" id="author">
+      <h4 class="Author text-base mb-3" id="author">
         Jordan Schor
       </h4>
     </div>
     <i class="bi bi-heart-fill" id="love"></i>
    </div>
+   <div  class="flex justify-center opacity-container h-10 ">
+   <img src="./images/5uwq.gif" class="opacity h-10 w-full" id="opacity" alt="">
+  </div>
     <div id="progress-container">
       <div class="progress-bar mt-3 rounded" id="progress-Bar">
       </div>
@@ -36,13 +39,15 @@
     </div>
     <audio src="./songs/music-1.mp3" id="audio"></audio>
      <!-- ----music Control---- -->
-    <div class="justify-center flex">
-      <i class="bi bi-skip-start text-black text-4xl mr-4" id="previous"></i>
+    <div class="flex justify-around">
+      <div class="flex">
+        <i class="bi bi-skip-start text-black text-4xl mr-4" id="previous"></i>
       <div id="ply-btn">
         <i class="bi bi-play-circle-fill text-black  text-5xl mr-4" id="pause"></i>
         <i class="bi bi-pause-circle-fill text-black  text-5xl mr-4" id="play"></i>
       </div>
       <i class="bi bi-skip-end text-black text-4xl" id="next"></i>
+      </div>
     </div>
   </div>
   <script src="./js/script.js"></script>

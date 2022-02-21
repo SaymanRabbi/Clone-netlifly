@@ -79,10 +79,12 @@ const progress = document.getElementById('progress-Bar');
 // ----progress bar-Container
 const progressContainer = document.getElementById('progress-container');
 playButton.addEventListener('click', () => {
-    pauseAudio() 
+    pauseAudio();
+    document.getElementById('opacity').style.opacity = 0;
    })
 pauseButton.addEventListener('click', () => {
-    audioPlay ()
+    audioPlay();
+    document.getElementById('opacity').style.opacity = 1;
 })
 document.getElementById('next').addEventListener('click', (e) => {
     nextSong()
