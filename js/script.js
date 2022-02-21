@@ -100,10 +100,10 @@ function pauseAudio() {
 }
 // ----next song----
 function nextSong() {
-    if (allMusic.length >= incress) {
+    if (allMusic.length >incress) {
         incress++;
     }
-    if (incress==10) {
+    if (incress==allMusic.length) {
         incress = 0;
     }
     audio.src = (`./songs/${allMusic[incress].song}`);
@@ -114,13 +114,13 @@ function nextSong() {
 // ------previous----
 function previous() {
     if (incress==0) {
-        incress = allMusic.length - 1;
+        incress = allMusic.length -1;
     }
     if (incress<allMusic.length) {
         incress--;
     }
     audio.src = (`./songs/${allMusic[incress].song}`);
-    console.log(allMusic[incress])
+    console.log(audio.src)
     img.src = (`./images/${allMusic[incress].img}`);
     audioPlay()
 }
