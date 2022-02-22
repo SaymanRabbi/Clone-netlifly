@@ -60,6 +60,11 @@ let allMusic = [
         name: 'Atif Aslams Heart ',
         author: 'Atif Aslams',
         song: "music-11.mp3"
+    },
+    {
+        name: 'Porshi Nogor ',
+        author: 'Milon Vai',
+        song: "music-12.mp3"
     }
 ];
 let incress = 0;
