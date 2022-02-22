@@ -142,10 +142,10 @@ function nextSong() {
 }
 // ------previous----
 function previous() {
-    if (incress==0) {
-        incress = allMusic.length -1;
+    if (incress== 0) {
+        incress = allMusic.length - 1;
     }
-    if (incress<allMusic.length) {
+    if (incress<allMusic.length && incress != allMusic.length -1) {
         incress--;
     }
     document.getElementById('opacity').style.opacity = 1;
