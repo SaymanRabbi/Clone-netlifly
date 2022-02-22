@@ -6,7 +6,7 @@ let allMusic = [
         song: "music-1.mp3"
     },
     {
-        name: 'Ikson Anywhere – Ikson',
+        name: 'Ikson Anywhere _ Ikson',
         author: 'Audio Library',
         song: "music-2.mp3"
     },
@@ -55,6 +55,11 @@ let allMusic = [
         name: 'asal me tum nahi ho mere',
         author: 'Dharshan',
         song: "music-10.mp3"
+    },
+    {
+        name: 'Atif Aslams Heart ',
+        author: 'Atif Aslams',
+        song: "music-11.mp3"
     }
 ];
 let incress = 0;
@@ -145,9 +150,10 @@ function previous() {
     if (incress== 0) {
         incress = allMusic.length - 1;
     }
-    if (incress<allMusic.length && incress != allMusic.length -1) {
+    if (incress<allMusic.length) {
         incress--;
     }
+    
     document.getElementById('opacity').style.opacity = 1;
     songName.innerText = allMusic[incress].name;
     authorName.innerText = allMusic[incress].author;
