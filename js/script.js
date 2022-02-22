@@ -150,7 +150,7 @@ function previous() {
     if (incress== 0) {
         incress = allMusic.length - 1;
     }
-    if (incress<allMusic.length) {
+    else {
         incress--;
     }
     
